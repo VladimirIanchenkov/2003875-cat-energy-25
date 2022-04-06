@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Подбор программы: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+
+    <header class="main-header">
+      <div class="main-header__container">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи.">
+        </a>
+        <a class="logo-words" href="index.html">
+          <img src="img/logo-words.svg" width="34" height="38" alt="Логотип Cat Energy.">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+
+      <section class="program">
+        <div class="program__container">
+          <form class="program__form main-form" action="https://echo.htmlacademy.ru" method="POST">
+            <h1 class="main-form__title">Подбор программы</h1>
+            <h2 class="visually-hidden">Базовая информация о клиенте</h2>
+            <span class="main-form__moto">Заполните анкету, и мы подберем<br>программу питания для вашего кота</span>
+
+            <div class="main-form__inner-container user-form">
+              <label class="user-form__field">
+                <span class="user-form__field-label">Имя:*</span>
+                <input class="user-form__field-control input" type="text" name="user-name" placeholder="Барсик" required>
+              </label>
+              <label class="user-form__field">
+                <span class="user-form__field-label">Вес (кг):*</span>
+                <input class="user-form__field-control input" type="number" name="user-weight" placeholder="7" required>
+              </label>
+              <label class="user-form__field">
+                <span class="user-form__field-label">Возраст (лет):</span>
+                <input class="user-form__field-control input" type="number" name="user-age" placeholder="7">
+              </label>
+            </div>
+            <div class="main-form__inner-container options-form">
+              <label class="options-form__field">
+                <input class="options-form__field-control input-radio" type="radio" name="diet-type" value="weight-increase" checked>
+                <span class="options-form__field-label">Похудение</span>
+              </label>
+              <label class="options-form__field">
+                <input class="options-form__field-control input-radio" type="radio" name="diet-type" value="weight-decrease">
+                <span class="options-form__field-label">Набор массы</span>
+              </label>
+              <label class="options-form__field">
+                <input class="options-form__field-control input-radio" type="radio" name="diet-type" value="undefined">
+                <span class="options-form__field-label">Не знаю (нужен ваш совет)</span>
+              </label>
+            </div>
+
+            <h2 class="main-form__subtitle heading">Контактные данные (владельца кота)</h2>
+            <div class="main-form__inner-container contacts-form">
+              <label class="contacts-form__field">
+                <span class="contacts-form__field-label">E-mail:*</span>
+                <input class="contacts-form__field-control input" type="email" name="user-email" placeholder="кuklachev@gmail.com" required>
+              </label>
+              <label class="contacts-form__field">
+                <span class="contacts-form__field-label">Телефон:*</span>
+                <input class="contacts-form__field-control input" type="tel" name="user-telephone" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
+
+            <h2 class="main-form__subtitle heading">Комментарий</h2>
+            <div class="main-form__inner-container comment-form">
+              <textarea class="comment-form__field-control input" name="comments" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+
+            <h2 class="main-form__subtitle heading">Дополнительно</h2>
+            <div class="main-form__inner-container additional-form">
+              <label class="additional-form__field">
+                <input class="additional-form__field-control input-checkbox" type="checkbox" name="product-extra-sweetener" checked>
+                <span class="additional-form__field-label">Сахарозаменитель</span>
+              </label>
+              <label class="additional-form__field">
+                <input class="additional-form__field-control input-checkbox" type="checkbox" name="product-extra-water">
+                <span class="additional-form__field-label">Питьевая вода</span>
+              </label>
+              <label class="additional-form__field">
+                <input class="additional-form__field-control input-checkbox" type="checkbox" name="product-extra-milk">
+                <span class="additional-form__field-label">Молоко</span>
+              </label>
+              <label class="additional-form__field">
+                <input class="additional-form__field-control input-checkbox" type="checkbox" name="product-extra-vitamins">
+                <span class="additional-form__field-label">Витамины</span>
+              </label>
+            </div>
+
+            <button class="main-form__button button" type="submit">Отправить заявку</button>
+            <span class="main-form__text">* — Обязательные поля</span>
+
+          </form>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="main-footer__contacts contacts">
+          <p class="contacts__moto">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
+          <p class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8</p>
+          <p class="contacts__text">Санкт-Петербург</p>
+          <img class="contacts__map-marker" src="img/map-pin.png" alt="Маркер Кэт энерджи на карте.">
+        </div>
+        <div class="main-footer__inner-container">
+          <a class="logo-words" href="index.html">
+            <img src="img/logo-words.svg" alt="Логотип Кэт энерджи.">
+          </a>
+          <ul class="main-footer__social-list">
+            <li class="main-footer__social-item">
+              <a class="main-footer__social-link main-footer__social-link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="main-footer__social-item">
+              <a class="main-footer__social-link main-footer__social-link--youtube" href="https://vk.com/htmlacademy">Мы в Ютубе</a>
+            </li>
+            <li class="main-footer__social-item">
+              <a class="main-footer__social-link main-footer__social-link--telegram" href="https://vk.com/htmlacademy">Мы в Телеграме</a>
+            </li>
+          </ul>
+          <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">HTML Academy</span>
+            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" fill="#666"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
