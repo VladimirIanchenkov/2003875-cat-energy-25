@@ -34,22 +34,27 @@
     </header>
 
     <main class="main-container">
-      <h1 class="visually-hidden">Функциональное питание для котов Кэт энерджи</h1>
+      <h1 class="visually-hidden">Главная страница</h1>
 
       <section class="product-intro">
         <div class="product-intro__container">
-          <h2 class="product-intro__title heading">Функциональное <br>питание для котов</h1>
+          <h2 class="product-intro__title heading">Функциональное <br>питание для котов</h2>
           <p class="product-intro__subtitle">Занялся собой? Займись котом!</p>
           <a class="product-intro__button button" href="form.html">Подобрать программу</a>
           <img class="product-intro__image" src="img/index-can.png" alt="Питание Кэт энерджи про со вкусом курицы.">
-          <ul class="options">
+        </div>
+      </section>
+
+      <section class="options">
+        <div class="options__container">
+          <ul class="options__list">
             <li class="options__item options__item--slim">
-              <h3 class="options__title">Похудение</h2>
+              <h3 class="options__title">Похудение</h3>
               <p class="options__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="options__link decoration-arrow" href="#">Каталог slim</a>
             </li>
             <li class="options__item options__item--pro">
-              <h3 class="options__title">Набор массы</h2>
+              <h3 class="options__title">Набор массы</h3>
               <p class="options__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="options__link decoration-arrow" href="#">Каталог pro</a>
             </li>
@@ -61,16 +66,16 @@
         <div class="manual__container">
           <h2 class="manual-title">Как это работает</h2>
           <ol class="manual__list">
-            <li class="manual__item manual__item--leaf manual__item--number">
+            <li class="manual__item manual__item--leaf">
               <p class="manual__description">Функциональное питание<br>содержит только полезные<br>питательные вещества.</p>
             </li>
-            <li class="manual__item manual__item--boiling manual__item--number">
+            <li class="manual__item manual__item--boiling">
               <p class="manual__description">Выпускается в виде порошка,<br>который нужно лишь залить<br>кипятком и готово.</p>
             </li>
-            <li class="manual__item manual__item--diet manual__item--number">
+            <li class="manual__item manual__item--diet">
               <p class="manual__description">Замените один-два приема<br>обычной еды на наше<br>функциональное питание.</p>
             </li>
-            <li class="manual__item manual__item--clock manual__item--number">
+            <li class="manual__item manual__item--clock">
               <p class="manual__description">Уже через месяц наслаждайтесь<br>изменениями к лучшему<br>вашего питомца!</p>
             </li>
           </ol>
@@ -97,9 +102,9 @@
             <img class="illustration__image" src="img/cat-fat.png" width="677" height="520" alt="Котик до.">
             <img class="illustration__image" src="img/cat-skinny.png" width="545" height="520" alt="Котик после.">
             <div class="illustration__range-container">
-              <span class="illustration__range-value">было</span>
-              <input class="illustration__range-input" type="range" min="1" max="100" value="50" id="">
-              <span class="illustration__range-value">стало</span>
+              <button class="illustration__range-value">было</button>
+              <input class="illustration__range-input" type="range" min="1" max="100" value="50">
+              <button class="illustration__range-value">стало</button>
             </div>
           </div>
         </div>
@@ -139,5 +144,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>
