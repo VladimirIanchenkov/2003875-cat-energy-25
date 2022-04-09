@@ -1,0 +1,59 @@
+.product-intro {
+  background: linear-gradient(to bottom, @green 302px, @white 302px);
+}
+
+.product-intro__container {
+  width: 320px;
+  .align-center;
+  background-image: url("..//..//img/cat-background.jpg");
+  background-position: top;
+  background-size: 320px 302px;
+  background-repeat: no-repeat;
+}
+
+.product-intro__container-inner {
+  .align-center;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 27px;
+}
+
+.product-intro__background-mask {
+  position: absolute;
+  background-color: #68b738d9;
+  width: 320px;
+  height: 302px;
+}
+
+.product-intro__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: @white;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+  z-index: 1;
+}
+
+.product-intro__moto {
+  .oswald-400;
+  font-size: 14px;
+  line-height: 14px;
+  color: @white;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+  z-index: 1;
+}
+
+.product-intro__button {
+  font-size: 14px;
+  line-height: 18px;
+  z-index: 1;
+}
+
+.product-intro__image {
+  z-index: 1;
+}
