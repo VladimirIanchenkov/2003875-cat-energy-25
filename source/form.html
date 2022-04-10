@@ -39,11 +39,13 @@
       <section class="program">
         <div class="program__container">
           <form class="program__form main-form" action="https://echo.htmlacademy.ru" method="POST">
-            <h1 class="main-form__title">Подбор программы</h1>
-            <span class="main-form__moto">Заполните анкету, и мы подберем<br>программу питания для вашего кота</span>
+            <div class="main-form__header-container">
+              <h1 class="main-form__title heading">Подбор программы</h1>
+              <span class="main-form__moto">Заполните анкету, и мы подберем<br>программу питания для вашего кота</span>
+            </div>
 
             <fieldset class="main-form__fieldset user-form">
-              <legend class="visually-hidden">Базовая информация о клиенте</legend>
+              <h2 class="visually-hidden">Базовая информация о клиенте</h2>
               <label class="user-form__field">
                 <span class="user-form__field-label">Имя:*</span>
                 <input class="user-form__field-control input" type="text" name="user-name" placeholder="Барсик" required>
@@ -57,23 +59,25 @@
                 <input class="user-form__field-control input" type="number" name="user-age" placeholder="7">
               </label>
             </fieldset>
-            <fieldset class="main-form__fieldset options-form">
-              <label class="options-form__field">
-                <input class="options-form__field-control input-radio" type="radio" name="diet-type" value="weight-increase" checked>
-                <span class="options-form__field-label">Похудение</span>
-              </label>
-              <label class="options-form__field">
-                <input class="options-form__field-control input-radio" type="radio" name="diet-type" value="weight-decrease">
-                <span class="options-form__field-label">Набор массы</span>
-              </label>
-              <label class="options-form__field">
-                <input class="options-form__field-control input-radio" type="radio" name="diet-type" value="not-known">
-                <span class="options-form__field-label">Не знаю (нужен ваш совет)</span>
-              </label>
-            </fieldset>
+            <div class="main-form__fieldset-container">
+              <fieldset class="main-form__fieldset options-form">
+                <label class="options-form__field">
+                  <input class="options-form__field-control input-radio" type="radio" name="diet-type" value="weight-increase" checked>
+                  <span class="options-form__field-label">Похудение</span>
+                </label>
+                <label class="options-form__field">
+                  <input class="options-form__field-control input-radio" type="radio" name="diet-type" value="weight-decrease">
+                  <span class="options-form__field-label">Набор массы</span>
+                </label>
+                <label class="options-form__field">
+                  <input class="options-form__field-control input-radio" type="radio" name="diet-type" value="not-known">
+                  <span class="options-form__field-label">Не знаю (нужен ваш совет)</span>
+                </label>
+              </fieldset>
+            </div>
 
             <fieldset class="main-form__fieldset contacts-form">
-              <legend class="main-form__subtitle heading">Контактные данные (владельца кота)</legend>
+              <h2 class="main-form__subtitle heading">Контактные данные (владельца&nbsp;кота)</h2>
               <label class="contacts-form__field">
                 <span class="contacts-form__field-label">E-mail:*</span>
                 <input class="contacts-form__field-control input" type="email" name="user-email" placeholder="кuklachev@gmail.com" required>
@@ -85,12 +89,12 @@
             </fieldset>
 
             <fieldset class="main-form__fieldset comment-form">
-              <legend class="main-form__subtitle heading">Комментарий</legend>
+              <h2 class="main-form__subtitle heading">Комментарий</h2>
               <textarea class="comment-form__field-control input" name="comments" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
 
-            <fieldset class="main-form__inner-container additional-form">
-              <legend class="main-form__subtitle heading">Дополнительно</legend>
+            <fieldset class="main-form__fieldset additional-form">
+              <h2 class="main-form__subtitle heading">Дополнительно</h2>
               <label class="additional-form__field">
                 <input class="additional-form__field-control input-checkbox" type="checkbox" name="product-extra-sweetener" checked>
                 <span class="additional-form__field-label">Сахарозаменитель</span>
@@ -109,8 +113,10 @@
               </label>
             </fieldset>
 
-            <button class="main-form__button button" type="submit">Отправить заявку</button>
-            <span class="main-form__text">* — Обязательные поля</span>
+            <div class="main-form__button-container">
+              <button class="main-form__button button" type="submit">Отправить заявку</button>
+              <span class="main-form__text">* — Обязательные поля</span>
+            </div>
 
           </form>
         </div>
