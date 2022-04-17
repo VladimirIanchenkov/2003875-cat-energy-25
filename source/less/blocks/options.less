@@ -9,14 +9,13 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
 }
 
 .options__item {
   list-style-type: none;
   background-color: @light-grey;
   margin-bottom: 20px;
-  padding: 21px 20px 22px;
+  padding: 30px 33px 18px 20px;
 }
 
 .options__item--slim {
@@ -34,14 +33,14 @@
 .options__title {
   font-size: 24px;
   line-height: 37px;
-  margin-bottom: 0;
-  margin-top: 5px;
+  margin: 0;
+  margin-bottom: 29px;
   margin-left: 71px;
 }
 
 .options__description {
   margin-bottom: 19px;
-  margin-top: 29px;
+  margin-top: 0;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -53,4 +52,86 @@
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .options__container {
+    width: 708px;
+  }
+
+  .options__item {
+    margin-bottom: 30px;
+    padding: 77px 316px 53px 52px;
+  }
+
+  .options__item--slim {
+    background-position: top 81px right 62px;
+    background-size: 200px 211px;
+  }
+
+  .options__item--pro {
+    background-position: top 91px right 28px;
+    background-size: 268px 200px;
+  }
+
+  .options__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    margin-left: 0;
+    text-transform: uppercase;
+  }
+
+  .options__description {
+    margin-bottom: 52px;
+    padding-bottom: 0;
+    border-bottom: none;
+    color: @black;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .options__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .options__container {
+    width: 1220px;
+  }
+
+  .options__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .options__item {
+    width: 570px;
+    box-sizing: border-box;
+    padding: 77px 51px 55px;
+    margin-bottom: 30px;
+  }
+
+  .options__item--slim {
+    background-position: top 41px left 52px;
+    background-size: 100px 106px;
+  }
+
+  .options__item--pro {
+    background-position: top 47px left 33px;
+    background-size: 134px 100px;
+  }
+
+  .options__title {
+    margin-bottom: 73px;
+    margin-top: 0;
+    margin-left: 162px;
+  }
+
+  .options__description {
+    margin-bottom: 23px;
+  }
 }

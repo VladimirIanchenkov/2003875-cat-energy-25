@@ -1,7 +1,7 @@
 .manual__container {
   .align-center;
   width: 280px;
-  padding-bottom: 49px;
+  padding-bottom: 29px;
 }
 
 .manual-title {
@@ -15,24 +15,20 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.manual__item:not(:last-child) {
-  margin: 0;
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
 }
 
 .manual__item {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .manual__description {
   margin: 0;
-  display: block;
+  display: inline-block;
+  max-width: 198px;
 }
 
 .manual__icon {
@@ -57,4 +53,87 @@
 
 .manual__icon--clock {
   background-image: url("..//..//img/icon-clock.svg");
+}
+
+.manual__item-number {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .manual {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .manual__container {
+    width: 708px;
+    padding-bottom: 47px;
+  }
+
+  .manual-title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 15px;
+    margin-bottom: 32px;
+  }
+
+  .manual__list {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    column-gap: 90px;
+    row-gap: 37px;
+  }
+
+  .manual__item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 57px;
+    position: relative;
+    justify-self: start;
+  }
+
+  .manual__description {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 245px;
+  }
+
+  .manual__icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+    margin-bottom: 31px;
+  }
+
+  .manual__item-number {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    .oswald-400;
+    font-size: 280px;
+    line-height: 280px;
+    color: @light-grey;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .manual {
+    border-bottom: none;
+  }
+
+  .manual__container {
+    width: 1220px;
+    padding-bottom: 26px;
+  }
+
+  .manual-title {
+    margin-top: 11px;
+  }
+
+  .manual__list {
+    grid-template-columns: auto auto auto auto;
+    column-gap: 77px;
+  }
 }

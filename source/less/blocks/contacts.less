@@ -15,9 +15,42 @@
 }
 
 .contacts__text {
+  line-height: 20px;
   margin: 0;
 }
 
 .contacts--catalog {
   background-color: @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding: 60px 40px 56px;
+    align-items: flex-start;
+  }
+
+  .contacts__moto {
+    font-size: 20px;
+    line-height: 26px;
+    color: #111111;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    text-align: end;
+  }
+
+  .contacts__text:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    padding: 56px 80px;
+  }
+
+  .contacts__text {
+    text-align: start;
+  }
 }
