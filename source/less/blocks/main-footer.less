@@ -60,3 +60,55 @@
   line-height: 19px;
   color: @grey;
 }
+
+@media (min-width: @tablet-width) {
+  .main-footer__contacts {
+    width: 708px;
+  }
+
+  .main-footer__links-list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 708px;
+    padding-top: 58px;
+    padding-bottom: 55px;
+  }
+
+  .main-footer__links-item {
+    width: auto;
+    padding: 0;
+  }
+
+  .main-footer__links-item:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .main-footer__logo {
+    margin-top: 0;
+  }
+
+  .main-footer__copyright {
+    width: 163px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__container {
+    position: relative;
+  }
+
+  .main-footer__contacts {
+    width: 565px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 9%;
+    top: 95px;
+    background-color: @white;
+  }
+
+  .main-footer__links-list {
+    width: 1220px;
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
+}

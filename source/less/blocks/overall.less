@@ -7,3 +7,24 @@
   margin-bottom: 40px;
   justify-content: center;
 }
+
+@media (min-width: @tablet-width) {
+  .overall {
+    font-size: 20px;
+    line-height: 20px;
+    width: 175px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .overall {
+    width: 330px;
+    margin-left: 0;
+    justify-content: space-between;
+    margin-top: 55px;
+  }
+}

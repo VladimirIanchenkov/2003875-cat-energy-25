@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -10,7 +11,12 @@
     <header class="main-header">
       <div class="main-header__container">
         <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип Кэт энерджи.">
+          <picture class="main-header__logo-image">
+            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+            <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/logo-tablet.svg">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип Кэт энерджи.">
+          </picture>
         </a>
         <a class="logo-words" href="index.html">
           <img src="img/logo-words.svg" width="101" height="18" alt="Логотип Cat Energy.">
@@ -20,8 +26,8 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="index.html">Главная</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -39,11 +45,15 @@
 
       <section class="product-intro">
         <div class="product-intro__container">
-          <div class="product-intro__background-mask"></div>
           <div class="product-intro__container-inner">
-            <h2 class="product-intro__title heading--modified">Функциональное <br>питание для котов</h2>
+            <h2 class="product-intro__title">Функциональное <br>питание для котов</h2>
             <p class="product-intro__moto">Занялся собой? Займись котом!</p>
-            <img class="product-intro__image" src="img/index-can.png" width="280" height="270" alt="Питание Кэт энерджи про со вкусом курицы.">
+            <picture class="product-intro__image">
+              <source media="(max-width: 767px)" srcset="img/index-can.png">
+              <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/index-can-tablet.png">
+              <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png">
+              <img src="img/index-can.png" alt="Питание Кэт энерджи про со вкусом курицы.">
+            </picture>
             <a class="product-intro__button button" href="form.html">Подобрать программу</a>
           </div>
         </div>
@@ -72,19 +82,23 @@
           <ol class="manual__list">
             <li class="manual__item">
               <div class="manual__icon manual__icon--leaf"></div>
-              <p class="manual__description">Функциональное питание<br>содержит только полезные<br>питательные вещества.</p>
+              <p class="manual__description">Функциональное питание содержит только полезные питательные вещества.</p>
+              <span class="manual__item-number">1</span>
             </li>
             <li class="manual__item">
               <div class="manual__icon manual__icon--boiling"></div>
-              <p class="manual__description">Выпускается в виде порошка,<br>который нужно лишь залить<br>кипятком и готово.</p>
+              <p class="manual__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+              <span class="manual__item-number">2</span>
             </li>
             <li class="manual__item">
               <div class="manual__icon manual__icon--diet"></div>
-              <p class="manual__description">Замените один-два приема<br>обычной еды на наше<br>функциональное питание.</p>
+              <p class="manual__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+              <span class="manual__item-number">3</span>
             </li>
             <li class="manual__item">
               <div class="manual__icon manual__icon--clock"></div>
-              <p class="manual__description">Уже через месяц<br>наслаждайтесь изменениями<br>к лучшему вашего питомца!</p>
+              <p class="manual__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <span class="manual__item-number">4</span>
             </li>
           </ol>
         </div>
@@ -93,7 +107,7 @@
       <section class="illustration">
         <div class="illustration__container">
           <h2 class="illustration__title heading">Живой пример</h2>
-          <p class="illustration__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <p class="illustration__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209прежнему спит по 16 часов в день.</p>
           <div class="illustration__list">
             <dl class="illustration__item">
               <div class="illustration__item-container">
