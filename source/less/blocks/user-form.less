@@ -17,3 +17,31 @@
   text-transform: uppercase;
   margin-right: 12px;
 }
+
+
+@media (min-width: @tablet-width) {
+  .user-form {
+    padding-bottom: 52px;
+  }
+
+  .user-form__field {
+    margin-bottom: 20px;
+  }
+
+  .user-form__field-label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-form {
+    width: 570px;
+    padding: 0;
+  }
+
+  .user-form__field-label {
+    margin-right: 14px;
+  }
+}
