@@ -15,3 +15,25 @@
 .specification__value {
   text-align: right;
 }
+
+@media (min-width: @tablet-width) {
+  .specification__feature,
+  .specification__value {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+  }
+
+  .specification__row {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .specification__feature,
+  .specification__value {
+    padding-top: 6px;
+    padding-bottom: 9px;
+  }
+}
+
