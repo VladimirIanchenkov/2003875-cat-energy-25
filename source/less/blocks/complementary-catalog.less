@@ -32,6 +32,7 @@
 
 .complementary-catalog__special-offer {
   background-image: url("../../img/bagpack-background-green.jpg");
+  background-color: @green;
   background-size: 279px 289px;
   background-repeat: no-repeat;
   background-position: center;
@@ -53,4 +54,72 @@
   color: @white;
   display: inline-block;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .complementary-catalog__container {
+    width: 708px;
+    padding-bottom: 76px;
+  }
+
+  .complementary-catalog__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 36px;
+    margin-bottom: 80px;
+  }
+
+  .complementary-catalog__list {
+    margin-bottom: 69px;
+  }
+
+  .complementary-catalog__special-offer {
+    background-size: 100%;
+    padding: 57px 124px 60px 77px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .complementary-catalog__special-offer svg {
+    margin: 0;
+    width: 80px;
+    height: 82px;
+  }
+
+  .complementary-catalog__moto {
+    text-align: start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .complementary-catalog__container {
+    width: 1220px;
+    padding-bottom: 86px;
+  }
+
+  .complementary-catalog__title {
+    margin-left: 0;
+    margin-bottom: 81px;
+  }
+
+  .complementary-catalog__special-offer {
+    background-size: 245px 289px;
+    flex-direction: column;
+    padding: 55px 43px 43px;
+    float: right;
+  }
+
+  .complementary-catalog__list {
+    float: left;
+  }
+
+  .complementary-catalog__special-offer svg {
+    margin-bottom: 48px;
+  }
+
+  .complementary-catalog__moto {
+    text-align: center;
+  }
 }

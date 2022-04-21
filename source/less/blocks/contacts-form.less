@@ -15,3 +15,38 @@
   text-transform: uppercase;
   margin-right: 12px;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts-form {
+    padding-top: 75px;
+    padding-bottom: 45px;
+  }
+
+  .contacts-form__field {
+    margin-bottom: 20px;
+  }
+
+  .contacts-form__field-label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-form {
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+
+  .contacts-form__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 40px;
+  }
+
+  .contacts-form__field {
+    margin-bottom: 20px;
+  }
+}
