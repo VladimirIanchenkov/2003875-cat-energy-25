@@ -84,47 +84,52 @@
 
 @media (min-width: @tablet-width) {
   .card {
-    padding: 8px 37px 39px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    position: relative;
+    padding: 0;
   }
 
-  .card::after {
-    content: "";
-    background-color: @light-grey;
-    width: 100%;
-    height: 83%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-
-  .card:last-child::after {
-    background-color: @white;
-    border: 2px solid @light-grey;
-  }
+  // .card::after {
+  //   content: "";
+  //   background-color: @light-grey;
+  //   width: 100%;
+  //   height: 83%;
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   z-index: -1;
+  // }
 
   .card__container {
     width: auto;
     display: block;
     margin: 0;
+    background-color: @light-grey;
+    padding: 161px 37px 39px;
+    position: relative;
+  }
+
+  .card__container--modified {
+    background-color: @white;
+    border: 2px solid @light-grey;
   }
 
   .card__link-image {
     width: auto;
     height: auto;
     display: block;
-    margin-bottom: 34px;
+    position: absolute;
+    bottom: 72%;
+    margin-left: -25%;
+    left: 50%;
   }
 
   .card__title {
     font-size: 20px;
     line-height: 24px;
     .align-center;
-    margin-bottom: 16px;
+    margin-bottom: 21px;
     width: 158px;
     text-align: center;
   }
@@ -137,7 +142,10 @@
     width: 60px;
     height: 60px;
     margin: 0;
-    margin-bottom: 49px;
+    position: absolute;
+    bottom: 66%;
+    margin-left: -10%;
+    left: 50%;
   }
 
   .card__link--modified path {
@@ -145,28 +153,31 @@
   }
 
   .card__title--modified {
-    margin-bottom: 23px;
+    line-height: 22px;
+    margin-bottom: 22px;
   }
 
   .card__text {
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 53px;
+    margin-bottom: 52px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .card {
-    padding: 0 38px 40px;
-  }
-
   .card__link-image {
-    margin-bottom: 42px;
+    bottom: 71%;
+    margin-left: -35%;
   }
 
   .card__title {
     line-height: 21px;
     margin-bottom: 14px;
+  }
+
+  .card__link--modified svg {
+    bottom: 76%;
+    margin-left: -12%;
   }
 
   .card__text {
