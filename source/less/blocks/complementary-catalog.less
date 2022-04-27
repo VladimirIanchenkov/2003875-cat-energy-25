@@ -1,3 +1,13 @@
+.complementary-catalog::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  margin-top: 16px;
+  width: 100%;
+  background-color: @green;
+  left: calc((100vw - 280px) / 2);
+}
+
 .complementary-catalog__container {
   .align-center;
   width: 280px;
@@ -9,6 +19,9 @@
   margin-top: 0;
   margin-bottom: 36px;
   position: relative;
+  background-color: @white;
+  padding-right: 22px;
+  display: inline-block;
 }
 
 .complementary-catalog__list {
@@ -21,7 +34,7 @@
 }
 
 .complementary-catalog__special-offer {
-  background-image: url("../../img/bagpack-background-green.jpg");
+  background-image: url("../img/bagpack-background-green.jpg");
   background-color: @green;
   background-size: 279px 289px;
   background-repeat: no-repeat;
@@ -47,6 +60,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .complementary-catalog::before {
+    margin-top: 23px;
+    left: 0;
+  }
+
   .complementary-catalog__container {
     width: 708px;
     padding-bottom: 76px;
@@ -55,8 +73,9 @@
   .complementary-catalog__title {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 36px;
+    margin-left: 0;
     margin-bottom: 80px;
+    padding: 0 36px;
   }
 
   .complementary-catalog__list {
@@ -64,6 +83,7 @@
   }
 
   .complementary-catalog__special-offer {
+    background-image: url("../img/bagpack-background-green-tablet.jpg");
     background-size: 100%;
     padding: 57px 124px 60px 77px;
     align-items: center;
@@ -90,11 +110,12 @@
   }
 
   .complementary-catalog__title {
-    margin-left: 0;
+    margin-left: -36px;
     margin-bottom: 81px;
   }
 
   .complementary-catalog__special-offer {
+    background-image: url("../img/bagpack-background-green.jpg");
     background-size: 245px 289px;
     flex-direction: column;
     padding: 55px 43px 43px;

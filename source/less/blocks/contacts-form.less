@@ -1,5 +1,4 @@
 .contacts-form {
-  padding-top: 26px;
   padding-bottom: 10px;
 }
 
@@ -7,18 +6,31 @@
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+  position: relative;
 }
 
 .contacts-form__field-label {
+  .oswald-400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 12px;
 }
 
+// .contacts-form__field-control[type="email"] {
+//   background-image: url("../img/icon-email-tablet-mobile.svg");
+//   background-repeat: no-repeat;
+//   background-position: right 17px top 50%;
+// }
+
+// .contacts-form__field-control[type="tel"] {
+//   background-image: url("../img/icon-phone-tablet-mobile.svg");
+//   background-repeat: no-repeat;
+//   background-position: right 13px top 50%;
+// }
+
 @media (min-width: @tablet-width) {
   .contacts-form {
-    padding-top: 75px;
     padding-bottom: 45px;
   }
 
@@ -35,7 +47,6 @@
 
 @media (min-width: @desktop-width) {
   .contacts-form {
-    padding-top: 49px;
     padding-bottom: 49px;
   }
 
