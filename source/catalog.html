@@ -21,23 +21,29 @@
         <a class="logo-words" href="index.html">
           <img src="img/logo-words.svg" width="101" height="18" alt="Логотип Cat Energy.">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+      </div>
+      <!-- Классы-модификаторы для .main-nav:
+      .main-nav--closed закрытое меню навигации, кнопка .main-nav__toggle имеет вид "гамбургера";
+      .main-nav--opened открытое меню навигаци, кнопка .main-nav__toggle имеет вид "крестика";
+      .main-nav--nojs отображение меню навигации при отключенном Java Script, кнопка .main-nav__toggle скрыта.-->
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__toggle-container">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main-container">
