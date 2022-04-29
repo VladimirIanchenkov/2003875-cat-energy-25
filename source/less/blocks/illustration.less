@@ -70,8 +70,10 @@
   .align-center;
 }
 
-.illustration__image:nth-last-of-type(2) {
+.illustration__image--after {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .illustration__range-container {
@@ -209,8 +211,8 @@
   }
 
   .illustration__image {
-    width: 591px;
-    height: 576px;
+    width: 592px;
+    height: 511px;
   }
 
   .illustration__range-container {
@@ -313,9 +315,5 @@
   .illustration__description {
     background-color: @light-grey;
     bottom: -6%;
-  }
-
-  .illustration__image {
-    height: 511px;
   }
 }

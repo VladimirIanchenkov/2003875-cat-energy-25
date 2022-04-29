@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
     <header class="main-header">
       <div class="main-header__container">
         <a class="main-header__logo" href="index.html">
-          <picture class="main-header__logo-image">
-            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-            <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/logo-tablet.svg">
+          <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-            <img src="img/logo-mobile.svg" alt="Логотип Кэт энерджи.">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи.">
           </picture>
         </a>
         <a class="logo-words" href="index.html">
@@ -61,11 +64,10 @@
             <li class="main-catalog__item card">
               <div class="card__container">
                 <a class="card__link-image" href="#">
-                  <picture class="card__image">
-                    <source media="(max-width: 767px)" srcset="img/chicken-small-mobile.png">
-                    <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/chicken-small-tablet-desktop.png">
-                    <source media="(min-width: 1440px)" srcset="img/chicken-small-tablet-desktop.png">
-                    <img src="img/chicken-small-mobile.png" alt="Маленькая банка Кэт энерджи со вкусом курицы.">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/chicken-small-tablet-desktop.png 1x, img/chicken-small-tablet-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/chicken-small-tablet-desktop.png 1x, img/chicken-small-tablet-desktop@2x.png 2x">
+                    <img class="card__image" src="img/chicken-small-mobile.png" srcset="img/chicken-small-mobile@2x.png 2x" width="68" height="86" alt="Маленькая банка Кэт энерджи со вкусом курицы.">
                   </picture>
                 </a>
                 <div class="card__container-inner">
@@ -94,11 +96,10 @@
             <li class="main-catalog__item card">
               <div class="card__container">
                 <a class="card__link-image" href="#">
-                  <picture class="card__image">
-                    <source media="(max-width: 767px)" srcset="img/chicken-big-mobile.png">
-                    <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/chicken-big-tablet.png">
-                    <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop.png">
-                    <img src="img/chicken-big-mobile.png" alt="Большая банка Кэт энерджи со вкусом курицы.">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop.png 1x, img/chicken-big-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/chicken-big-tablet.png 1x, img/chicken-big-tablet@2x.png 2x">
+                    <img class="card__image card__image--big" src="img/chicken-big-mobile.png" srcset="img/chicken-big-mobile@2x.png 2x" width="84" height="100" alt="Большая банка Кэт энерджи со вкусом курицы.">
                   </picture>
                 </a>
                 <div class="card__container-inner">
@@ -127,11 +128,10 @@
             <li class="main-catalog__item card">
               <div class="card__container">
                 <a class="card__link-image" href="#">
-                  <picture class="card__image">
-                    <source media="(max-width: 767px)" srcset="img/fish-small-mobile.png">
-                    <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/fish-small-tablet-desktop.png">
-                    <source media="(min-width: 1440px)" srcset="img/fish-small-tablet-desktop.png">
-                    <img src="img/fish-small-mobile.png" alt="Маленькая банка Кэт энерджи со вкусом рыбы.">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/fish-small-tablet-desktop.png 1x, img/fish-small-tablet-desktop@2x.png 2x,">
+                    <source media="(min-width: 768px)" srcset="img/fish-small-tablet-desktop.png 1x, img/fish-small-tablet-desktop@2x.png 2x">
+                    <img class="card__image" src="img/fish-small-mobile.png" srcset="img/fish-small-mobile@2x.png 2x" width="68" height="78" alt="Маленькая банка Кэт энерджи со вкусом рыбы.">
                   </picture>
                 </a>
                 <div class="card__container-inner">
@@ -160,11 +160,10 @@
             <li class="main-catalog__item card">
               <div class="card__container">
                 <a class="card__link-image" href="#">
-                  <picture class="card__image">
-                    <source media="(max-width: 767px)" srcset="img/fish-big-mobile.png">
-                    <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/fish-big-tablet.png">
-                    <source media="(min-width: 1440px)" srcset="img/fish-big-desktop.png">
-                    <img src="img/fish-big-mobile.png" alt="Большая банка Кэт энерджи со вкусом рыбы.">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/fish-big-desktop.png 1x, img/fish-big-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/fish-big-tablet.png 1x, img/fish-big-tablet@2x.png 1x">
+                    <img class="card__image card__image--big" src="img/fish-big-mobile.png" srcset="img/fish-big-mobile@2x.png 2x" width="84" height="100" alt="Большая банка Кэт энерджи со вкусом рыбы.">
                   </picture>
                 </a>
                 <div class="card__container-inner">
@@ -193,11 +192,10 @@
             <li class="main-catalog__item card">
               <div class="card__container">
                 <a class="card__link-image" href="#">
-                  <picture class="card__image">
-                    <source media="(max-width: 767px)" srcset="img/buckwheat-small-mobile.png">
-                    <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/buckwheat-small-tablet-desktop.png">
-                    <source media="(min-width: 1440px)" srcset="img/buckwheat-small-tablet-desktop.png">
-                    <img src="img/buckwheat-small-mobile.png" alt="Маленькая банка Кэт энерджи со вкусом гречки.">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/buckwheat-small-tablet-desktop.png 1x, img/buckwheat-small-tablet-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet-desktop.png 1x, img/buckwheat-small-tablet-desktop@2x.png 2x">
+                    <img class="card__image" src="img/buckwheat-small-mobile.png" srcset="img/buckwheat-small-mobile@2x.png 2x" width="68" height="78" alt="Маленькая банка Кэт энерджи со вкусом гречки.">
                   </picture>
                 </a>
                 <div class="card__container-inner">
@@ -226,11 +224,10 @@
             <li class="main-catalog__item card">
               <div class="card__container">
                 <a class="card__link-image" href="#">
-                  <picture class="card__image">
-                    <source media="(max-width: 767px)" srcset="img/buckwheat-big-mobile.png">
-                    <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/buckwheat-big-tablet.png">
-                    <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop.png">
-                    <img src="img/buckwheat-big-mobile.png" alt="Большая банка Кэт энерджи со вкусом гречки.">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                    <img class="card__image card__image--big" src="img/buckwheat-big-mobile.png" srcset="img/buckwheat-big-mobile@2x.png 2x" width="84" height="100" alt="Большая банка Кэт энерджи со вкусом гречки.">
                   </picture>
                 </a>
                 <div class="card__container-inner">
@@ -259,11 +256,10 @@
             <li class="main-catalog__item card">
               <div class="card__container">
                 <a class="card__link-image" href="#">
-                  <picture class="card__image">
-                    <source media="(max-width: 767px)" srcset="img/rice-small-mobile.png">
-                    <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/rice-small-tablet-desktop.png">
-                    <source media="(min-width: 1440px)" srcset="img/rice-small-tablet-desktop.png">
-                    <img src="img/rice-small-mobile.png" alt="Маленькая банка Кэт энерджи со вкусом риса.">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/rice-small-tablet-desktop.png 1x, img/rice-small-tablet-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/rice-small-tablet-desktop.png 1x, img/rice-small-tablet-desktop@2x.png 2x">
+                    <img class="card__image" src="img/rice-small-mobile.png" srcset="img/rice-small-mobile@2x.png 2x" width="72" height="84" alt="Маленькая банка Кэт энерджи со вкусом риса.">
                   </picture>
                 </a>
                 <div class="card__container-inner">
