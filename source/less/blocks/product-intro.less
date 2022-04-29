@@ -5,12 +5,16 @@
 .product-intro__container {
   width: 320px;
   .align-center;
-  background-image: url("../../img/cat-background-green.jpg");
+  background-image: url("../img/cat-background-green.jpg");
   background-position: top;
   background-size: 320px 302px;
   background-repeat: no-repeat;
   padding-top: 27px;
   padding-bottom: 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-background-green@2x.jpg");
+  }
 }
 
 .product-intro__container-inner {
@@ -96,6 +100,8 @@
   }
 
   .product-intro__image {
+    width: 709px;
+    height: 609px;
     position: absolute;
     z-index: -1;
     bottom: 0;
@@ -121,8 +127,13 @@
     top: 0;
     width: 1044px;
     height: 694px;
-    background-image: url("../../img/cat-background-green-desktop.jpg");
+    background-image: url("../img/cat-background-green-desktop.jpg");
+    background-size: auto 694px;
     background-color: @green;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-background-green-desktop@2x.jpg");
+    }
   }
 
   .product-intro__container {
@@ -144,6 +155,8 @@
   }
 
   .product-intro__image {
+    width: 552px;
+    height: 499px;
     top: 0;
     left: 37%;
   }
