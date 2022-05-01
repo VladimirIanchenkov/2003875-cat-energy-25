@@ -14,10 +14,16 @@
   display: inline-block;
 }
 
-.footer-social__link:hover path {
+.footer-social__link:hover svg {
   fill: @green;
 }
 
-.footer-social__link:active path {
+.footer-social__link:active svg {
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-social__list {
+    margin-left: 25px;
+  }
 }
