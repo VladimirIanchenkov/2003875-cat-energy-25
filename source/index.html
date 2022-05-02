@@ -31,7 +31,7 @@
       .main-nav--closed закрытое меню навигации, кнопка .main-nav__toggle имеет вид "гамбургера";
       .main-nav--opened открытое меню навигаци, кнопка .main-nav__toggle имеет вид "крестика";
       .main-nav--nojs отображение меню навигации при отключенном Java Script, кнопка .main-nav__toggle скрыта.-->
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__toggle-container">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -139,21 +139,25 @@
           </div>
           <div class="illustration__range">
             <div class="illustration__image-container">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-fat-tablet-desktop.png 1x, img/cat-fat-tablet-desktop@2x.png 2x">
-                <img class="illustration__image" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="280" height="232" alt="Котик до.">
-              </picture>
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet-dekstop.png 1x, img/cat-skinny-tablet-dekstop@2x.png 2x">
-                <img class="illustration__image illustration__image--after" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" width="243" height="232" alt="Котик после.">
-              </picture>
+              <div class="illustration__image-container-inner">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-fat-tablet-desktop.png 1x, img/cat-fat-tablet-desktop@2x.png 2x">
+                  <img class="illustration__image" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x" width="280" height="232" alt="Котик до.">
+                </picture>
+              </div>
+              <div class="illustration__image-container-inner illustration__image-container-inner--after">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet-dekstop.png 1x, img/cat-skinny-tablet-dekstop@2x.png 2x">
+                  <img class="illustration__image illustration__image--after" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" width="243" height="232" alt="Котик после.">
+                </picture>
+              </div>
             </div>
             <div class="illustration__range-container">
               <button class="illustration__range-value-button">
                 <span class="illustration__range-value-text">было</span>
               </button>
               <div class="illustration__range-scale">
-                <div class="illustration__range-bar" style="width: 36px;">
+                <div class="illustration__range-bar" style="width: 50%;">
                   <button class="illustration__range-bar-toggle">
                     <span class="visually-hidden">Изменить состояние изображения</span>
                   </button>
