@@ -6,7 +6,8 @@
     <title>Подбор программы: Кэт энерджи</title>
     <link rel="preload" href="./css/style.min.css" as="style">
     <link rel="preload" href="./js/script.min.js" as="script">
-    <link rel="preload" href="./fonts/*.woff2" as="font">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
@@ -18,10 +19,10 @@
     <header class="main-header">
       <div class="main-header__container">
         <a class="main-header__logo" href="index.html">
-          <svg class="main-header__logo-image" role="img" aria-label="Функциональное питание Кэт Энерджи">
-            <use class="main-header__logo-image--desktop" href="./img/sprite.svg#logo-desktop"></use>
-            <use class="main-header__logo-image--tablet" href="./img/sprite.svg#logo-tablet"></use>
-            <use class="main-header__logo-image--mobile" href="./img/sprite.svg#logo-mobile"></use>
+          <svg role="img" aria-label="Функциональное питание Кэт Энерджи">
+            <use class="main-header__logo-image main-header__logo-image--desktop" href="./img/sprite.svg#logo-desktop"></use>
+            <use class="main-header__logo-image main-header__logo-image--tablet" href="./img/sprite.svg#logo-tablet"></use>
+            <use class="main-header__logo-image main-header__logo-image--mobile" href="./img/sprite.svg#logo-mobile"></use>
           </svg>
         </a>
         <a class="logo-words" href="index.html">
@@ -31,9 +32,9 @@
         </a>
       </div>
       <!-- Классы-модификаторы для .main-nav:
-      .main-nav--closed закрытое меню навигации, кнопка .main-nav__toggle имеет вид "гамбургера";
-      .main-nav--opened открытое меню навигаци, кнопка .main-nav__toggle имеет вид "крестика";
-      .main-nav--nojs отображение меню навигации при отключенном Java Script, кнопка .main-nav__toggle скрыта.-->
+      closed закрытое меню навигации, кнопка .main-nav__toggle имеет вид "гамбургера";
+      opened открытое меню навигаци, кнопка .main-nav__toggle имеет вид "крестика";
+      nojs отображение меню навигации при отключенном Java Script, кнопка .main-nav__toggle скрыта.-->
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__toggle-container">
           <button class="main-nav__toggle" type="button">
@@ -108,14 +109,14 @@
                   <label class="contacts-form__field">
                     <span class="contacts-form__field-label">E-mail:*</span>
                     <input class="contacts-form__field-control input" type="email" name="user-email" placeholder="кuklachev@gmail.com" required>
-                    <svg class="input__image-email" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="contacts-form__field-image contacts-form__field-image--email" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path stroke="#222" stroke-width="1.3" d="M1.18 6v8m17-8v8M.53 13.35h18m-18-12h18m-.65 1.83-8.35 6.5-8.35-6.5V1.65h16.7v1.53Z"/>
                     </svg>
                   </label>
                   <label class="contacts-form__field">
                     <span class="contacts-form__field-label">Телефон:*</span>
                     <input class="contacts-form__field-control input" type="tel" name="user-telephone" placeholder="8 (960) 900-60-90" required>
-                    <svg class="input__image-phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="contacts-form__field-image contacts-form__field-image--phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#a)" fill="#000">
                         <path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1a.75.75 0 0 0 0-.9l-3.1-3.1-.9.9 2.1 2Zm-9.8 10v-6.2a.65.65 0 0 0-.6-.6H3.1a1.22 1.22 0 0 0 1.2 1.2h2.5v5H3.1a1.79 1.79 0 0 1-1.9-1.7v-14a1.77 1.77 0 0 1 1.7-1.8h3.9v5H4.4a1.22 1.22 0 0 0-1.2 1.2h4.4a.65.65 0 0 0 .6-.6V.6a.86.86 0 0 0-.7-.6H3.1A3 3 0 0 0 0 2.9v13.9a2.89 2.89 0 0 0 2.9 3.1h4.6a.5.5 0 0 0 .6-.5Z"/>
                       </g>
