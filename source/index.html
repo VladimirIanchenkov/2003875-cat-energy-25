@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="preload" href="./js/script.min.js" as="script">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="img/index-can@2x.png" as="image">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicons/apple.png">
@@ -157,7 +161,7 @@
                 <span class="illustration__range-value-text">было</span>
               </button>
               <div class="illustration__range-scale">
-                <div class="illustration__range-bar" style="width: 50%;">
+                <div class="illustration__range-bar">
                   <button class="illustration__range-bar-toggle">
                     <span class="visually-hidden">Изменить состояние изображения</span>
                   </button>
@@ -233,6 +237,6 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
