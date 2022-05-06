@@ -6,7 +6,8 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="preload" href="./css/style.min.css" as="style">
     <link rel="preload" href="./js/script.min.js" as="script">
-    <link rel="preload" href="./fonts/*.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="img/index-can@2x.png" as="image">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
@@ -19,10 +20,10 @@
     <header class="main-header">
       <div class="main-header__container">
         <a class="main-header__logo" >
-          <svg class="main-header__logo-image" role="img" aria-label="Функциональное питание Кэт Энерджи">
-            <use class="main-header__logo-image--desktop" href="./img/sprite.svg#logo-desktop"></use>
-            <use class="main-header__logo-image--tablet" href="./img/sprite.svg#logo-tablet"></use>
-            <use class="main-header__logo-image--mobile" href="./img/sprite.svg#logo-mobile"></use>
+          <svg role="img" aria-label="Функциональное питание Кэт Энерджи">
+            <use class="main-header__logo-image main-header__logo-image--desktop" href="./img/sprite.svg#logo-desktop"></use>
+            <use class="main-header__logo-image main-header__logo-image--tablet" href="./img/sprite.svg#logo-tablet"></use>
+            <use class="main-header__logo-image main-header__logo-image--mobile" href="./img/sprite.svg#logo-mobile"></use>
           </svg>
         </a>
         <a class="logo-words">
@@ -32,9 +33,9 @@
         </a>
       </div>
       <!-- Классы-модификаторы для .main-nav:
-      .main-nav--closed закрытое меню навигации, кнопка .main-nav__toggle имеет вид "гамбургера";
-      .main-nav--opened открытое меню навигаци, кнопка .main-nav__toggle имеет вид "крестика";
-      .main-nav--nojs отображение меню навигации при отключенном Java Script, кнопка .main-nav__toggle скрыта.-->
+      closed закрытое меню навигации, кнопка .main-nav__toggle имеет вид "гамбургера";
+      opened открытое меню навигации, кнопка .main-nav__toggle имеет вид "крестика";
+      nojs отображение меню навигации при отключенном Java Script, кнопка .main-nav__toggle скрыта.-->
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__toggle-container">
           <button class="main-nav__toggle" type="button">
@@ -124,7 +125,7 @@
       <section class="illustration">
         <div class="illustration__container">
           <h2 class="illustration__title heading">Живой пример</h2>
-          <p class="illustration__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209прежнему спит по 16 часов в день.</p>
+          <p class="illustration__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.</p>
           <div class="illustration__list">
             <dl class="illustration__item">
               <div class="illustration__item-container">

@@ -30,39 +30,10 @@
   outline: 2px solid #ff8282;
 }
 
-.input__image-phone,
-.input__image-email {
-  position: absolute;
-  left: 246px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.input:invalid + .input__image-phone g {
-  fill: #ff8282;
-}
-
-.input:invalid + .input__image-email path {
-  stroke: #ff8282;
-}
-
 @media (min-width: @tablet-width) {
   .input {
     font-size: 20px;
     line-height: 30px;
     padding: 10px 17px 11px;
-  }
-
-  .input__image-phone,
-  .input__image-email {
-    left: 595px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .input__image-phone,
-  .input__image-email {
-    left: 532px;
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
